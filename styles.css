@@ -221,6 +221,40 @@ body {
     margin-top: 1rem;
   }
 }
+/* Override .container flex behavior inside the hero */
+.hero .container {
+  display: flex;            /* still flex */
+  flex-direction: column;   /* stack h1, p, button vertically */
+  align-items: center;      /* center them */
+  width: 100%;              /* full width on all screens */
+  max-width: 700px;         /* keep your previous max */
+  gap: 1rem;                /* space between title / text / button */
+}
+
+/* Make sure text centers and wraps nicely */
+.hero h1,
+.hero p {
+  text-align: center;
+  width: 100%;
+}
+
+/* (Optional) Tweak spacing on mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .btn-primary {
+    width: 100%;
+    padding: 0.6rem 0;
+  }
+}
+
 .about {
   background-color: #0a2540; /* Dark blue background */
   color: #f0f4f8; /* Light text for contrast */
