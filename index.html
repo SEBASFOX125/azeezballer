@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand">Azeezportfolio</div>
+
+      <button
+        class="hamburger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+<section class="hero">
+  <div class="hero-content container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Your gateway to my projects, skills, and experience.</p>
+    <a href="#projects" class="btn-primary">View Projects</a>
+  </div>
+</section>
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <h2>About Me</h2>
+    <p class="intro">
+      I design sleek, user-friendly websites with a meticulous focus on detail and seamless interaction.
+    </p>
+    <ul class="skills-list">
+      <li><strong>HTML5</strong>: Structured, semantic code for accessibility</li>
+      <li><strong>CSS3</strong>: Adaptive layouts and smooth transitions</li>
+      <li><strong>JavaScript (ES6+)</strong>: Dynamic functionality and interactive features</li>
+      <li><strong>React.js</strong>: Modular, component-based user interfaces</li>
+    </ul>
+    <h3>My Journey</h3>
+    <p class="journey-text">
+      I began tinkering with basic HTML projects and gradually advanced to building interactive JavaScript applications. This journey has sharpened my skills in front-end development and user-centric design.
+    </p>
+  </div>
+</section>
+<section class="skills-section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <h3>Frontend</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Backend</h3>
+      <ul>
+        <li>Node.js</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Image Editor</h3>
+      <ul>
+        <li>Adobe Photoshop</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="projects" style="background-color: #000; padding: 50px 20px;">
+  <h2 style="color: #fff; text-align: center;">Projects</h2>
+  <p style="color: #ccc; text-align: center;">Here are a few things I’ve built recently.</p>
+  <div class="projects-container">
+    
+    <!-- Image Search App -->
+    <div class="project-card">
+      <a href="https://streamcrypt.github.io/" target="_blank" rel="noopener">
+        <img src="https://i.imgur.com/wSVCRlp.png" alt="Image Search App Screenshot">
+      </a>
+      <h5>Image Search App</h5>
+      <p>
+        Browse up to 1000 unique photos in a sleek, responsive interface. Powered by the Unsplash API, it delivers fast, dynamic results with crystal-clear thumbnails.
+      </p>
+      <a class="view-live" href="https://streamcrypt.github.io/" target="_blank" rel="noopener">View Live</a>
+    </div>
+    
+    <!-- Random Color Generator -->
+    <div class="project-card">
+      <a href="https://streamcrypt.github.io/color-generator" target="_blank" rel="noopener">
+        <img src="https://i.imgur.com/7IczQXN.png" alt="Random Color Generator Screenshot">
+      </a>
+      <h5>Random Color Generator</h5>
+      <p>
+        Generate 30 random hex color swatches instantly. Fully responsive grid adapts from desktop to mobile, perfect for quick design inspiration.
+      </p>
+      <a class="view-live" href="https://streamcrypt.github.io/color-generator" target="_blank" rel="noopener">View Live</a>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="experience" class="experience-section">
+  <h2>Experience</h2>
+  <div class="experience-list">
+    <article class="experience-item">
+      <h3>Senior Developer</h3>
+      <p class="company-time">
+        <span class="company">TechCorp Inc.</span> &nbsp;|&nbsp;
+        <time datetime="2019-06">Jun 2019</time> – 
+        <time datetime="2022-08">Aug 2022</time>
+      </p>
+      <p>Led a team of developers to build scalable web applications.</p>
+      <ul>
+        <li>Built React/Node.js apps with 1M+ users.</li>
+        <li>Optimized backend APIs and database queries.</li>
+        <li>Mentored junior engineers.</li>
+      </ul>
+    </article>
+
+    <article class="experience-item">
+      <h3>Front-End Engineer</h3>
+      <p class="company-time">
+        <span class="company">WebStudio LLC</span> &nbsp;|&nbsp;
+        <time datetime="2016-02">Feb 2016</time> – 
+        <time datetime="2019-05">May 2019</time>
+      </p>
+      <p>Developed responsive UIs and interactive features.</p>
+      <ul>
+        <li>Created modular components using HTML, CSS, JS.</li>
+        <li>Worked closely with designers for accessible interfaces.</li>
+        <li>Improved page load speed by 40%.</li>
+      </ul>
+    </article>
+
+    <article class="experience-item">
+      <h3>Junior Developer</h3>
+      <p class="company-time">
+        <span class="company">Startup XYZ</span> &nbsp;|&nbsp;
+        <time datetime="2014-09">Sep 2014</time> – 
+        <time datetime="2016-01">Jan 2016</time>
+      </p>
+      <p>Assisted with feature development and bug fixes.</p>
+      <ul>
+        <li>Implemented front-end features in HTML/CSS.</li>
+        <li>Maintained documentation and tests.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>Get In Touch</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Email</button>
+    </form>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <p>© 2025 Azeezportfolio. All rights reserved.</p>
+   
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
